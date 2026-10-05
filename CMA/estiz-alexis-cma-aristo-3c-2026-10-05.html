@@ -292,6 +292,12 @@
   }
   table.comp-table .tag.active{background:var(--good-soft);color:var(--good);}
   table.comp-table .tag.contract{background:var(--watch-soft);color:var(--watch);}
+  table.comp-table .tag.closed{background:var(--accent-soft);color:var(--accent);}
+  table.comp-table a.unit-link{color:var(--accent);font-weight:700;text-decoration:none;border-bottom:1px solid var(--accent);}
+  table.comp-table a.unit-link:hover{text-decoration:none;opacity:.75;}
+  table.comp-table tr.pending-row td{text-align:center;padding:20px;color:var(--ink-soft);font-style:italic;}
+  .comp-subhead{font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-soft);font-weight:600;margin-top:24px;}
+  .comp-subhead:first-of-type{margin-top:20px;}
   .note-txt{font-size:12px;color:var(--ink-soft);line-height:1.5;}
 
   .range-bar-wrap{margin-top:22px;}
@@ -369,7 +375,7 @@
 
     <div class="stat-row">
       <div class="stat"><div class="n">$1,249,000</div><div class="l">Current ask &middot; $1,176/SF</div></div>
-      <div class="stat"><div class="n">$1,210K&ndash;$1,360K</div><div class="l">Sales-comp fair value range</div></div>
+      <div class="stat"><div class="n">$1,224K&ndash;$1,355K</div><div class="l">Sales-comp fair value range (closed)</div></div>
       <div class="stat"><div class="n">3.16%</div><div class="l">Implied cap rate at ask</div></div>
       <div class="stat"><div class="n">48 days</div><div class="l">On market, this listing cycle</div></div>
     </div>
@@ -378,7 +384,7 @@
       <a href="#subject">Subject Property</a>
       <a href="#sales-comp">Sales Comparison</a>
       <a href="#income">Income Approach</a>
-      <a href="#verdict">Coastal's Read</a>
+      <a href="#verdict">Valuation Summary</a>
     </div>
   </header>
 
@@ -404,47 +410,64 @@
       <div class="price-history">
         <b>Price history:</b> Originally listed Sept 12, 2025 at $1,380,000 (prior brokerage) &middot; delisted Mar 18, 2026 &middot; relisted Aug 18, 2026 at $1,349,000 (Daniel Gale Sotheby's) &middot; cut to $1,249,000 on Sept 11, 2026 (&minus;7.4%). Cumulative discount from original ask: &minus;9.5%. ~48 days on market this cycle; well over a year counting the full listing history.
       </div>
+      <div class="price-history" style="border-top:none;padding-top:0;margin-top:8px;">
+        <b>Sale history:</b> None. This is a sponsor unit being offered for the first time since the building's 2024 construction &mdash; no prior closed sale to report.
+      </div>
     </div>
   </div>
 
   <div class="section" id="sales-comp">
     <div class="section-head"><h2>Sales Comparison Approach</h2></div>
     <div class="callout">
-      Priority given to comps inside The Aristo itself, then the two directly adjacent sister new-construction buildings (Rowan I &amp; II, both within one block), then the wider Ditmars&ndash;Steinway/Astoria condo submarket. All eight comps below fall within the requested 180&ndash;360 day lookback by construction: The Aristo and both Rowan buildings are 2024&ndash;2026 new-construction sell-outs, so every sponsor unit on the market now is current inventory, not an older sale needing a longer window.
+      Closed sales come first and are the primary comp set; active asking prices are listed below for secondary guidance only. Priority given to comps inside The Aristo itself, then the two directly adjacent sister new-construction buildings (Rowan I &amp; II, both within one block), then the wider Ditmars&ndash;Steinway/Astoria condo submarket. All comps fall within the requested 180&ndash;360 day lookback by construction: The Aristo and both Rowan buildings are 2024&ndash;2026 new-construction sell-outs, so every unit on the market now is current inventory, not an older sale needing a longer window.
     </div>
 
+    <div class="comp-subhead">Closed sales &mdash; primary comps</div>
+    <table class="comp-table">
+      <tr><th>Unit</th><th>Building</th><th>Beds/Ba</th><th>SF</th><th>Sold Price</th><th>$/SF</th><th>Sold Date</th><th>Comparability note</th></tr>
+      <tr><td><a class="unit-link" href="https://streeteasy.com/sale/1777010" target="_blank" rel="noopener">3D</a></td><td>The Aristo</td><td>2/2</td><td class="num">1,114</td><td class="num">$1,340,000</td><td class="num">$1,203</td><td>12/02/25</td><td class="note-txt">Same floor as subject (3rd) &amp; closest size match. Sold at full ask (0%). Best single comp in the set.</td></tr>
+      <tr><td><a class="unit-link" href="https://streeteasy.com/sale/1771565" target="_blank" rel="noopener">3E</a></td><td>The Aristo</td><td>2/2</td><td class="num">1,129</td><td class="num">$1,440,823</td><td class="num">$1,276</td><td>10/30/25</td><td class="note-txt">Same floor as subject. Sold 6.3% over ask &mdash; highest $/SF in the set; strong demand at the time.</td></tr>
+      <tr><td><a class="unit-link" href="https://streeteasy.com/sale/1735569" target="_blank" rel="noopener">3A</a></td><td>The Aristo</td><td>2/2</td><td class="num">1,176</td><td class="num">$1,384,820</td><td class="num">$1,178</td><td>12/02/25</td><td class="note-txt">Same floor as subject, largest of the 3rd-floor closings. Sold 3.5% under ask.</td></tr>
+      <tr><td><a class="unit-link" href="https://streeteasy.com/sale/1771561" target="_blank" rel="noopener">2F</a></td><td>The Aristo</td><td>2/2</td><td class="num">1,207</td><td class="num">$1,439,551</td><td class="num">$1,193</td><td>10/30/25</td><td class="note-txt">Largest closed comp overall. Sold just over ask (+1.0%).</td></tr>
+      <tr><td><a class="unit-link" href="https://streeteasy.com/sale/1735637" target="_blank" rel="noopener">2A</a></td><td>The Aristo</td><td>2/2</td><td class="num">983</td><td class="num">$1,215,000</td><td class="num">$1,236</td><td>12/16/25</td><td class="note-txt">2nd floor. Sold 5.2% over ask &mdash; one of two closings that cleared asking by a wide margin.</td></tr>
+      <tr><td><a class="unit-link" href="https://streeteasy.com/sale/1748218" target="_blank" rel="noopener">2C</a></td><td>The Aristo</td><td>2/2</td><td class="num">955</td><td class="num">$1,155,000</td><td class="num">$1,209</td><td>12/10/25</td><td class="note-txt">2nd floor. Sold 5.5% over ask.</td></tr>
+      <tr><td><a class="unit-link" href="https://streeteasy.com/sale/1768455" target="_blank" rel="noopener">2D</a></td><td>The Aristo</td><td>2/2</td><td class="num">919</td><td class="num">$1,060,000</td><td class="num">$1,153</td><td>01/29/26</td><td class="note-txt">Smallest &amp; most recent closing, 2nd floor. Sold 3.2% under ask &mdash; lowest $/SF in the set, sets the floor.</td></tr>
+    </table>
+    <div style="font-size:11.5px;color:var(--ink-soft);margin-top:8px;">7 closed sales, all same-building (The Aristo, 18 units, 2024 construction), all 2BR/2BA, sold Oct 30, 2025 &ndash; Jan 29, 2026. Average $1,207/SF &middot; median $1,203/SF. A pre-development bulk land sale from 2022 (13,205 SF) is excluded as not a comparable condo-unit transaction.</div>
+
+    <div class="comp-subhead">Active listings &mdash; secondary guidance</div>
     <table class="comp-table">
       <tr><th>Unit</th><th>Building</th><th>Beds/Ba</th><th>SF</th><th>Price</th><th>$/SF</th><th>Status</th><th>Comparability note</th></tr>
-      <tr class="subject-row"><td>3C</td><td>The Aristo</td><td>2/2</td><td class="num">1,062</td><td class="num">$1,249,000</td><td class="num">$1,176</td><td><span class="tag active">Subject</span></td><td class="note-txt">&mdash;</td></tr>
-      <tr><td>3B</td><td>The Aristo</td><td>2/2</td><td class="num">1,079</td><td class="num">$1,399,000</td><td class="num">$1,297</td><td><span class="tag contract">In contract</span></td><td class="note-txt">Closest size match, same building. In contract &rarr; real demand signal, not just an ask.</td></tr>
-      <tr><td>1B</td><td>The Aristo</td><td>2/2</td><td class="num">2,045</td><td class="num">$1,345,000</td><td class="num">$658</td><td><span class="tag active">Active</span></td><td class="note-txt">~2x subject's size at a similar price &mdash; illustrates the size/$-per-SF inverse relationship; not a direct comp on its own.</td></tr>
-      <tr><td>1F</td><td>The Aristo</td><td>1/1</td><td class="num">680</td><td class="num">$735,000</td><td class="num">$1,081</td><td><span class="tag active">Active</span></td><td class="note-txt">Smaller 1BR; useful as the building's $/SF floor reference.</td></tr>
-      <tr><td>5LL</td><td>Rowan II (21-11 31st St)</td><td>2/2</td><td class="num">903</td><td class="num">$1,250,000</td><td class="num">$1,384</td><td><span class="tag active">Active</span></td><td class="note-txt">One block away, no water view. Smaller unit, so a higher $/SF is expected.</td></tr>
-      <tr><td>3F</td><td>Rowan II</td><td>2/2</td><td class="num">918</td><td class="num">$1,295,000</td><td class="num">$1,411</td><td><span class="tag active">Active</span></td><td class="note-txt">Same building as above, same read.</td></tr>
-      <tr><td>4K</td><td>Rowan II</td><td>2/1</td><td class="num">790</td><td class="num">$1,095,000</td><td class="num">$1,386</td><td><span class="tag active">Active</span></td><td class="note-txt">One fewer bath than subject; still useful for the size/$-per-SF pattern.</td></tr>
-      <tr><td>#804</td><td>22-54 46th St</td><td>2/2</td><td class="num">1,163</td><td class="num">$1,275,000</td><td class="num">$1,096</td><td><span class="tag active">Active</span></td><td class="note-txt">Closest size match overall. Different sub-area, standard elevator building, no water view &mdash; explains the lower $/SF.</td></tr>
-      <tr><td>#409</td><td>45-02 Ditmars Blvd</td><td>2/2</td><td class="num">1,159</td><td class="num">$1,100,000</td><td class="num">$949</td><td><span class="tag active">Active</span></td><td class="note-txt">Different sub-area, no water view, resale (not sponsor) product.</td></tr>
+      <tr class="subject-row"><td><a class="unit-link" href="https://streeteasy.com/building/the-aristo/3c" target="_blank" rel="noopener">3C</a></td><td>The Aristo</td><td>2/2</td><td class="num">1,062</td><td class="num">$1,249,000</td><td class="num">$1,176</td><td><span class="tag active">Subject</span></td><td class="note-txt">&mdash;</td></tr>
+      <tr><td><a class="unit-link" href="https://streeteasy.com/building/the-aristo/3b" target="_blank" rel="noopener">3B</a></td><td>The Aristo</td><td>2/2</td><td class="num">1,079</td><td class="num">$1,399,000</td><td class="num">$1,297</td><td><span class="tag contract">In contract</span></td><td class="note-txt">Closest size match, same building. In contract &rarr; real demand signal, not just an ask.</td></tr>
+      <tr><td><a class="unit-link" href="https://streeteasy.com/building/the-aristo/1b" target="_blank" rel="noopener">1B</a></td><td>The Aristo</td><td>2/2</td><td class="num">2,045</td><td class="num">$1,345,000</td><td class="num">$658</td><td><span class="tag active">Active</span></td><td class="note-txt">~2x subject's size at a similar price &mdash; illustrates the size/$-per-SF inverse relationship; not a direct comp on its own.</td></tr>
+      <tr><td><a class="unit-link" href="https://streeteasy.com/building/the-aristo/1f" target="_blank" rel="noopener">1F</a></td><td>The Aristo</td><td>1/1</td><td class="num">680</td><td class="num">$735,000</td><td class="num">$1,081</td><td><span class="tag active">Active</span></td><td class="note-txt">Smaller 1BR; useful as the building's $/SF floor reference.</td></tr>
+      <tr><td><a class="unit-link" href="https://streeteasy.com/building/rowan-ii/5ll" target="_blank" rel="noopener">5LL</a></td><td>Rowan II (21-11 31st St)</td><td>2/2</td><td class="num">903</td><td class="num">$1,250,000</td><td class="num">$1,384</td><td><span class="tag active">Active</span></td><td class="note-txt">One block away, no water view. Smaller unit, so a higher $/SF is expected.</td></tr>
+      <tr><td><a class="unit-link" href="https://streeteasy.com/building/rowan-ii/3f" target="_blank" rel="noopener">3F</a></td><td>Rowan II</td><td>2/2</td><td class="num">918</td><td class="num">$1,295,000</td><td class="num">$1,411</td><td><span class="tag active">Active</span></td><td class="note-txt">Same building as above, same read.</td></tr>
+      <tr><td><a class="unit-link" href="https://streeteasy.com/building/rowan-ii/4k" target="_blank" rel="noopener">4K</a></td><td>Rowan II</td><td>2/1</td><td class="num">790</td><td class="num">$1,095,000</td><td class="num">$1,386</td><td><span class="tag active">Active</span></td><td class="note-txt">One fewer bath than subject; still useful for the size/$-per-SF pattern.</td></tr>
+      <tr><td><a class="unit-link" href="https://streeteasy.com/building/fabric-condominium/804" target="_blank" rel="noopener">#804</a></td><td>Fabric, 22-54 46th St</td><td>2/2</td><td class="num">1,163</td><td class="num">$1,275,000</td><td class="num">$1,096</td><td><span class="tag active">Active</span></td><td class="note-txt">Closest size match overall. Different sub-area, standard elevator building, no water view &mdash; explains the lower $/SF.</td></tr>
+      <tr><td><a class="unit-link" href="https://streeteasy.com/building/pistilli-grand-manor/409" target="_blank" rel="noopener">#409</a></td><td>Pistilli Grand Manor, 45-02 Ditmars Blvd</td><td>2/2</td><td class="num">1,159</td><td class="num">$1,100,000</td><td class="num">$949</td><td><span class="tag active">Active</span></td><td class="note-txt">Different sub-area, no water view, resale (not sponsor) product.</td></tr>
     </table>
 
     <div class="callout" style="margin-top:20px;">
-      <b>Reading the spread:</b> same-size units one block away with no water view (Rowan II, 790&ndash;918 SF) are asking $1,384&ndash;$1,411/SF &mdash; higher than subject, which is normal: smaller units carry a per-foot premium in NYC condos. Similar-size resales further from the water (46th St, Ditmars Blvd, 1,159&ndash;1,163 SF) are asking $949&ndash;$1,096/SF &mdash; lower than subject, reflecting no water view and older, standard (non-sponsor) product. Subject's direct water/park view, private outdoor space, and new-construction sponsor status justify sitting above that lower band. The same-building in-contract comp (3B, $1,297/SF) is the single best data point, since contract status means it's close to an actual transacted price rather than just an ask.
+      <b>Reading the spread:</b> the 7 same-building closed sales average $1,207/SF (median $1,203/SF) and range $1,153&ndash;$1,276/SF. The three that share subject's 3rd floor (3D, 3A, 3E) average $1,219/SF, slightly above the building-wide average &mdash; a modest floor premium, though it's not a clean trend: the single highest $/SF (3E, $1,276) and the lowest (2D, $1,153) sit on different floors, and sale-to-sale variance of &plusmn;3&ndash;6% versus ask looks more like unit-specific timing/negotiation than a consistent floor or size effect. That noise is typical for a small 18-unit sponsor sellout. Applying the $1,207/SF average and $1,203/SF median to subject's 1,062 SF points to a value of roughly $1,278K&ndash;$1,282K, which closely corroborates the original active-listing read (current in-contract comp 3B, $1,297/SF) &mdash; two independent data sources landing in the same place is a good confidence signal. Active asking prices (below) remain useful for triangulating against the wider submarket but are now secondary to this closed-sale set.
     </div>
 
     <div class="range-bar-wrap">
-      <div class="eyebrow" style="margin-bottom:0;">Sales-comparison fair value range</div>
+      <div class="eyebrow" style="margin-bottom:0;">Sales-comparison fair value range (closed-sale basis)</div>
       <div class="range-bar">
         <div class="fill" style="left:8%;right:8%;"></div>
-        <div class="marker" style="left:41%;"><div class="mlabel">Ask $1,249K</div></div>
-        <div class="marker" style="left:58%;background:var(--accent);"><div class="mlabel" style="color:var(--accent);">Point est. $1,275K</div></div>
+        <div class="marker" style="left:24%;"><div class="mlabel">Ask $1,249K</div></div>
+        <div class="marker" style="left:44%;background:var(--accent);"><div class="mlabel" style="color:var(--accent);">Point est. $1,280K</div></div>
       </div>
-      <div class="range-labels"><span>$1,210,000</span><span>$1,360,000</span></div>
+      <div class="range-labels"><span>$1,224,000</span><span>$1,355,000</span></div>
     </div>
   </div>
 
   <div class="section" id="income">
     <div class="section-head"><h2>Income Approach</h2></div>
     <div class="callout">
-      No individually-owned condo unit directly in this footprint turned up on the rental market right now &mdash; owners who rent out a single condo list far less often than a managed building does. The closest rental data is from the two large new-construction waterfront rental towers nearby (Halletts Point / The Durst Organization, and 11-14 35th Ave by EXR), whose 2BR/2BA net-effective rents cluster $4,285&ndash;$5,833/mo. Those towers carry full-service amenities (doorman, gym, pool, lounge) that The Aristo doesn't have, which argues for landing below that range; subject's private outdoor space and water view argue for not landing at the very bottom either.
+      No individually-owned condo unit directly in this footprint turned up on the rental market right now &mdash; owners who rent out a single condo list far less often than a managed building does. We also checked The Aristo's own unavailable-rentals history (22 delisted rental listings): unlike the sales side, StreetEasy does not expose a confirmed "Rented at $X" status for this building's rentals &mdash; only asking-price history through to delisting &mdash; so it can't upgrade this estimate the way the closed sales upgraded the sales comparison above. The closest usable rental data remains the two large new-construction waterfront rental towers nearby (Halletts Point / The Durst Organization, and 11-14 35th Ave by EXR), whose 2BR/2BA net-effective rents cluster $4,285&ndash;$5,833/mo. Those towers carry full-service amenities (doorman, gym, pool, lounge) that The Aristo doesn't have, which argues for landing below that range; subject's private outdoor space and water view argue for not landing at the very bottom either.
     </div>
 
     <div class="noi-box">
@@ -472,25 +495,21 @@
   </div>
 
   <div class="section" id="verdict">
-    <div class="section-head"><h2>Coastal's Read</h2></div>
+    <div class="section-head"><h2>Valuation Summary</h2></div>
 
     <div class="verdict-card">
       <h3>The ask is fair, with modest room to negotiate &mdash; not a yield play</h3>
       <div class="verdict-stats">
-        <div class="vs"><div class="n">$1,210K&ndash;$1,360K</div><div class="l">Sales-comp range</div></div>
-        <div class="vs"><div class="n">~$1,150K&ndash;$1,200K</div><div class="l">Realistic negotiation floor</div></div>
+        <div class="vs"><div class="n">$1,224K&ndash;$1,355K</div><div class="l">Sales-comp range (closed)</div></div>
+        <div class="vs"><div class="n">~$1,190K&ndash;$1,225K</div><div class="l">Realistic negotiation floor</div></div>
         <div class="vs"><div class="n">3.16%</div><div class="l">Cap rate at ask</div></div>
       </div>
-      <p>The $1,249,000 ask ($1,176/SF) sits inside the sales-comparison range and just below Coastal's $1,275,000 point estimate &mdash; a fair, not aggressive, price for an end-user buyer. Given the one prior price cut and ~48 days on this listing cycle (over a year counting the original 2025 listing), there's real but not dramatic room to negotiate, realistically into the $1,150,000&ndash;$1,200,000 zone.</p>
+      <p>The $1,249,000 ask ($1,176/SF) sits just inside the low end of the closed-sale comparison range and about 2.4% below Coastal's $1,280,000 point estimate &mdash; a fair, not aggressive, price for an end-user buyer, and now backed by 7 same-building closed sales rather than asking prices alone. Given the one prior price cut, ~48 days on this listing cycle (over a year counting the original 2025 listing), and the closed-sale floor of $1,153/SF (2D, the building's most recent closing), there's real room to negotiate, realistically into the $1,190,000&ndash;$1,225,000 zone.</p>
       <p>On a pure rental-yield basis, the math is tighter: at ask, this is a 3.16% cap &mdash; below the 3.5&ndash;5% range NYC investors typically target. If Alexis's interest here is primarily investment return rather than personal use or appreciation, the current price doesn't clear that bar without a meaningful discount that the sales comps don't support.</p>
     </div>
 
-    <div class="flag-card">
-      <b>Worth flagging before Wednesday:</b> Alexis's stated budget in our CRM is $500K&ndash;$800K. This listing at $1,249,000 is well above that ceiling. Marc may already know her range has moved, or this is an exploratory/stretch showing &mdash; just worth a quick check-in so the showing is calibrated to where she actually stands.
-    </div>
-
     <div class="data-note">
-      <b>Data note:</b> every sales comp above is a current asking price, not a confirmed closed sale. StreetEasy's closed-sale history for this building sits behind a logged-in session this tool can't access on Herman's behalf, and a check of NYC's public ACRIS deed records for this address didn't return a match. Comp #1 (Unit 3B) is in contract and may have a closed price by now &mdash; worth pulling via StreetEasy Pro/MLS before finalizing any offer strategy with Alexis.
+      <b>Data note:</b> the closed-sale table above (7 sales, Oct 2025&ndash;Jan 2026) is pulled from StreetEasy's unavailable-units history for The Aristo, which requires a logged-in session &mdash; each row links to its own sale listing page for verification. A check of NYC's public ACRIS deed records for this address didn't return a match, so StreetEasy is the primary source; worth a follow-up cross-check via StreetEasy Pro/MLS if Herman wants deed-level confirmation. The active-listings table below the closed sales is current asking prices only, kept for secondary submarket context. On the rental side, the same unavailable-units view does not expose a confirmed achieved-rent figure (see Income Approach note above), so that section still relies on nearby comparable rental towers. The unit currently shown In contract (3B) may have its own closed price available soon &mdash; worth a follow-up check once it records.
     </div>
   </div>
 
@@ -501,10 +520,9 @@
       Coastal Property Advisors &middot; NY | CA | FL<br>
       hs@coastalpropertyadvisors.com &middot; 718-679-7822
     </div>
-    <div>Prepared October 5, 2026. Sales comps reflect current asking prices (see data note above); rent is a conservative, comp-based estimate, not a guarantee. This CMA is a market read to guide pricing/negotiation conversations, not a formal appraisal.</div>
+    <div>Prepared October 5, 2026. Sales comparison is anchored on 7 closed sales in the subject building (see data note above); rent is a conservative, comp-based estimate, not a guarantee. This CMA is a market read to guide pricing/negotiation conversations, not a formal appraisal.</div>
   </footer>
 
 </div>
-
 </body>
 </html>
